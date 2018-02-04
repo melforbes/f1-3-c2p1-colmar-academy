@@ -1,0 +1,442 @@
+/* Font style */
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v9/qEjAkCC_I8-NsX6aYiQHCfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v9/cSNs3NwpEgPVRQzvkh3NeQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nunito Bold'), local('Nunito-Bold'), url(https://fonts.gstatic.com/s/nunito/v9/uGMHL94-PyB0HAplpWqScBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nunito Bold'), local('Nunito-Bold'), url(https://fonts.gstatic.com/s/nunito/v9/TttUCfJ272GBgSKaOaD7KltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Nunito ExtraBold'), local('Nunito-ExtraBold'), url(https://fonts.gstatic.com/s/nunito/v9/5mhSNH8mQPt4rCLVvIPPgxJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Nunito ExtraBold'), local('Nunito-ExtraBold'), url(https://fonts.gstatic.com/s/nunito/v9/uWPftrNW4xALzHc_KE-W1FtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+html {
+  background-color: white;
+  font-family: Nunito;
+  font-size: 18px;
+  line-height: 1.4;
+  color: rgb(70, 84, 87);
+}
+
+/* Universal styles*/
+
+h1 {
+  line-height: 2.2rem;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+h2 {
+  line-height: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  line-height: 2.2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h4 {
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+/*///////// Full screen /////////*
+
+/* Nav */
+
+nav.desktop {
+  display: flex;
+  background-color: cadetblue;
+  color: white;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.5rem;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+
+nav img {
+  height: 2.5rem;
+  margin-right: 0.5rem;
+}
+
+nav.mobile {
+  display: none;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+ul li {
+  display: inline;
+  padding: 0.5rem 0;
+  margin-right: 2.5rem;
+}
+
+li:hover {
+  font-weight: 800;
+}
+
+.academy:hover {
+  color: black;
+}
+
+/* First section after nav */
+
+.learn {
+  display: block;
+  background-color: lightgrey;
+  padding-top: 3rem;
+}
+
+.learning {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 3rem;
+  flex-shrink: 3;
+}
+
+.learn img {
+  padding-top: 3rem;
+  padding-right: 6rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  width: 56%;
+}
+
+.learn h3 {
+  padding-top: 3rem;
+}
+
+.button {
+  display: block;
+  background-color: rgb(70, 84, 87);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 7rem;
+  font-size: 1.5rem;
+}
+
+/* Second section */
+
+.campus {
+  display: block;
+}
+
+.campus h4 {
+    padding-top: 1rem;
+}
+
+.practice {
+  display: flex;
+}
+
+.onsite {
+  display: block;
+  padding-top: 3rem;
+  padding-right: 8rem;
+  padding-bottom: 3rem;
+}
+
+.onsite img {
+  padding-left: 2rem;
+  width: 100%;
+  height: auto;
+}
+
+.onsite div {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.orientation {
+  display: flex;
+  height: auto;
+}
+
+.orientation p {
+  color: rgb(63, 151, 199);
+}
+
+.orientation .desktop {
+  margin-right: 1rem;
+  height: auto;
+}
+
+.orientation .mobile {
+  display: none;
+}
+
+.orientation div {
+  padding-top: 4rem;
+}
+
+.orientation h4 {
+    padding-top: 1rem;
+}
+
+/* Third section */
+
+.courses {
+  display: block;
+  background-color: lightgrey;
+  padding-bottom: 3rem;
+}
+
+.courses h2 {
+  text-align: center;
+  padding: 3rem;
+}
+
+.classes {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.classes img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery {
+  align-content: center;
+  padding-bottom: 1rem;
+  background-color: white;
+  margin-bottom: 3rem;
+}
+
+.summary {
+  padding: 1rem;
+  background-color: white;
+  height: 8rem;
+}
+
+.summary h4 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Fourth section */
+
+.exhibit {
+  display: block;
+}
+
+.exhibit h2 {
+  text-align: center;
+  padding: 3rem;
+}
+
+.contents {
+  display: flex;
+}
+
+video {
+  max-width: 90%;
+  padding-left: 2rem;
+}
+
+.words {
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  max-width: 90%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  margin-right: 6rem;
+}
+
+.overview div {
+  padding-top: 1rem;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 16px;
+  display: flex;
+  padding: 16px 24px;
+  border-top: 1px solid #d8d8d8;
+  font-size: .75em;
+}
+
+.copyright {
+  margin-right: auto;
+}
+
+.link {
+  margin-left: 16px;
+}
+
+/*/////// Media queries */
+
+@media only screen and (max-width: 480px) {
+  .learning {
+    display: block;
+    align-content: center;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  .learning img {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  .onsite {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  img.mobile {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  img.mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  img.desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  img.mobile {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  img.mobile {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .summary h4 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .summary {
+    height: 4rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .summary {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .words {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .video {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  nav.mobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+  nav.desktop {
+    display: none;
+}
+
+}
+
+@media only screen and (min-width: 481px) {
+
+  nav.mobile {
+    display: none;
+    width: 100%;
+}
+
+  nav.desktop {
+  display: flex;
+}
